@@ -1,0 +1,11 @@
+zookeeper1:
+  image: jayjohnson/springxd-zookeeper
+  container_name: "zookeeper1"
+  hostname: "zookeeper1"
+  working_dir: /opt/spring-xd/zookeeper/bin
+  ports:
+    - "2181:2181"
+  cap_add:
+    - ALL
+    - NET_ADMIN
+    - SYS_ADMIN
